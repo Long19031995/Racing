@@ -1179,6 +1179,7 @@ GameObject:
   - component: {fileID: 919132148186614315}
   - component: {fileID: 919132148186614314}
   - component: {fileID: -109032779361947971}
+  - component: {fileID: 3491494566327204055}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -1231,7 +1232,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &919132148186614314
 BoxCollider:
@@ -1260,6 +1261,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rotationSpeed: 100
+  originPosition: {x: 0, y: 0, z: 0}
+--- !u!81 &3491494566327204055
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267920200736714029}
+  m_Enabled: 1
 --- !u!1 &8498441772291007000
 GameObject:
   m_ObjectHideFlags: 0

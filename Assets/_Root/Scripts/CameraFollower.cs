@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollower : MonoBehaviour
@@ -12,7 +10,7 @@ public class CameraFollower : MonoBehaviour
         if (target != null)
         {
             transform.position = target.TransformPoint(offset);
-            transform.LookAt(target);
+            transform.LookAt(target.position + Vector3.up * offset.y);
         }
     }
 }

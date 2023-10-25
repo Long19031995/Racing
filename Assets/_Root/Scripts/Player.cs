@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -29,6 +27,16 @@ public class Player : MonoBehaviour
         {
             transform.position = originPosition;
             transform.rotation = Quaternion.identity;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            speed = 40f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            speed = 20f;
         }
     }
 }
